@@ -9,7 +9,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import org.codeforegypt.caffienedesign.ui.theme.TextSizeOfCup
+import org.codeforegypt.caffienedesign.presentation.ui.theme.TextSizeOfCup
 import kotlin.math.PI
 import kotlin.math.sin
 

@@ -5,6 +5,7 @@ import org.codeforegypt.caffienedesign.domian.CoffeeDrink
 import org.codeforegypt.caffienedesign.domian.CoffeeVisuals
 import org.codeforegypt.caffienedesign.domian.CoffeeSize
 import org.codeforegypt.caffienedesign.domian.CoffeeStrength
+import org.codeforegypt.caffienedesign.domian.Snack
 
 object DummyCoffeeData {
         val coffeeList = listOf(
@@ -92,4 +93,12 @@ object DummyCoffeeData {
                 )
             )
         )
+    val snackList = listOf(
+        Snack(1, "Chocolate Muffin", R.drawable.chocolate),
+        Snack(2, "Chocolate Muffin", R.drawable.cupcake),
+        Snack(3, "Chocolate Muffin", R.drawable.cookies),
+        Snack(4, "Chocolate Muffin", R.drawable.cinnabon),
+        Snack(5, "Chocolate Muffin", R.drawable.croissant),
+        Snack(6, "Chocolate Muffin", R.drawable.oreo),
+    )
     }

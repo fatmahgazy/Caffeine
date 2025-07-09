@@ -33,9 +33,10 @@ import org.codeforegypt.caffienedesign.presentation.components.CoffeeBeanSizeSel
 import org.codeforegypt.caffienedesign.presentation.components.AnimatedCupDisplay
 import org.codeforegypt.caffienedesign.presentation.components.CupSize
 import org.codeforegypt.caffienedesign.presentation.components.ButtonsSize
+import org.codeforegypt.caffienedesign.presentation.components.CustomCancelButton
 import org.codeforegypt.caffienedesign.presentation.components.SizeSelectorHeader
 import org.codeforegypt.caffienedesign.presentation.navigation.Screen
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
@@ -106,61 +107,12 @@ fun SelectSizeContent(
             modifier = Modifier.padding(top = 16.dp)
         )
         Spacer(modifier = Modifier.height(60.dp))
-        TextIconButtonForSizeScreen(
+        CustomCancelButton(
             onClickNext,
             "Continue",
             R.drawable.arrow_right,
             Modifier.align(Alignment.CenterHorizontally),
             width = 132.dp
         )
-    }
-}
-@Composable
-fun TextIconButtonForSizeScreen(
-    onClickNext: () -> Unit,
-    text: String,
-    icon: Int,
-    modifier: Modifier = Modifier,
-    width: Dp = 0.dp ,
-    height: Dp = 56.dp
-) {
-    Button(
-        onClick = onClickNext,
-        colors = ButtonDefaults.buttonColors(
-            containerColor = Color(0xFF1F1F1F)
-        ),
-        shape = RoundedCornerShape(50.dp),
-        elevation = ButtonDefaults.buttonElevation(
-            defaultElevation = 8.dp,
-            pressedElevation = 12.dp,
-            hoveredElevation = 10.dp
-        ),
-        modifier = modifier
-            .padding(bottom = 50.dp)
-            .wrapContentSize()
-            .padding(horizontal = 32.dp, vertical = 16.dp)
-    ) {
-        Row(
-            modifier = Modifier
-                .height(height)
-                .width(width),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center
-        ) {
-            Text(
-                text = text,
-                color = Color(0xDEFFFFFF),
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-                fontFamily = Urbanist,
-                letterSpacing = .25.sp,
-                lineHeight = 16.sp,
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            Image(
-                painter = painterResource(id = icon),
-                contentDescription = "Coffee cup icon"
-            )
-        }
     }
 }

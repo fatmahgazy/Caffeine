@@ -12,12 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import org.codeforegypt.caffienedesign.presentation.components.AppHeader
 import org.codeforegypt.caffienedesign.R
+import org.codeforegypt.caffienedesign.presentation.components.AppHeader
+import org.codeforegypt.caffienedesign.presentation.components.CustomCancelButton
 import org.codeforegypt.caffienedesign.presentation.components.FloatingGhost
 import org.codeforegypt.caffienedesign.presentation.components.Texts
 import org.codeforegypt.caffienedesign.presentation.navigation.Screen
-import org.codeforegypt.caffienedesign.presentation.screens.orderSizeDetailsScreen.TextIconButtonForSizeScreen
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -44,7 +44,7 @@ private fun StartContent(
         Texts()
         FloatingGhost()
         Spacer(modifier = Modifier.height(50.dp))
-        TextIconButtonForSizeScreen(
+        CustomCancelButton(
             onClickNext,
             buttonText,
             R.drawable.coffee_icon,

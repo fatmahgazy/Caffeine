@@ -19,9 +19,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.codeforegypt.caffienedesign.R
-import org.codeforegypt.caffienedesign.ui.theme.ButtonCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.ButtonTextCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.ButtonCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.ButtonTextCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 
 @Composable
 fun PrimaryIconButton(

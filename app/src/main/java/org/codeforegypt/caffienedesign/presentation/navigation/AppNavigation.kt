@@ -54,9 +54,12 @@ fun AppNavigation() {
             SnackSelectionScreen(navController)
         }
 
-        composable(Screen.Enjoy.route) {
-            EnjoyScreen(navController)
+        composable(
+            Screen.Enjoy.route,
+            arguments = listOf(navArgument("snackId") { type = NavType.IntType })) {
+            EnjoyScreen(
+                navController = navController
+            )
         }
-
     }
 }

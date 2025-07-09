@@ -25,10 +25,10 @@ import org.codeforegypt.caffienedesign.R
 import org.codeforegypt.caffienedesign.presentation.components.CoffeeTitleText
 import org.codeforegypt.caffienedesign.presentation.components.TwoSmallGrayDots
 import org.codeforegypt.caffienedesign.presentation.components.WaveProgressAnimation
-import org.codeforegypt.caffienedesign.ui.theme.DescriptionCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.MyTransparentColor
-import org.codeforegypt.caffienedesign.ui.theme.TextSizeOfCup
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.DescriptionCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.MyTransparentColor
+import org.codeforegypt.caffienedesign.presentation.ui.theme.TextSizeOfCup
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 
 @Composable
 fun CupDisplayWithText(

@@ -17,7 +17,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import org.codeforegypt.caffienedesign.R
 import org.codeforegypt.caffienedesign.presentation.navigation.Screen
-import org.codeforegypt.caffienedesign.ui.theme.GrayCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.GrayCaffeine
 
 @Composable
 fun CancelNavigationButton(

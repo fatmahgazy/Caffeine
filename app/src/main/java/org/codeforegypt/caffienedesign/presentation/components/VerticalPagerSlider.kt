@@ -28,15 +28,18 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.fontscaling.MathUtils.lerp
-import org.codeforegypt.caffienedesign.R
 import kotlinx.coroutines.launch
+import org.codeforegypt.caffienedesign.R
+import org.codeforegypt.caffienedesign.data.DummyCoffeeData
+import org.codeforegypt.caffienedesign.domian.Snack
 import kotlin.math.abs
 
 @SuppressLint("ConfigurationScreenWidthHeight", "RestrictedApi")
 @Composable
 fun VerticalPagerSlider(
     pagerState: PagerState,
-    onItemClick: (Int) -> Unit
+    snacks: List<Snack>,
+    onItemClick: (Snack) -> Unit
 ) {
     val configuration = LocalConfiguration.current
     val screenHeight = configuration.screenHeightDp.dp
@@ -97,6 +100,9 @@ fun VerticalPagerSlider(
             else -> screenHeight.value * 0.5f * pageOffset
         }
 
+        val snack = snacks[page]
+
+
         Box(
             modifier = Modifier
                 .graphicsLayer {
@@ -115,14 +121,14 @@ fun VerticalPagerSlider(
                     shape = RoundedCornerShape(32.dp)
                 )
                 .clickable(
-                    onClick = { onItemClick(sweat[page]) },
+                    onClick = { onItemClick(snack) },
                     indication = null,
                     interactionSource = remember { MutableInteractionSource() },
                 ),
             contentAlignment = Alignment.Center
         ) {
             Image(
-                painter = painterResource(sweat[page]),
+                painter = painterResource(snack.imageRes),
                 contentDescription = "Sweat ${page + 1}",
                 modifier = Modifier.size(screenWidth * 0.4f)
             )
@@ -148,12 +154,16 @@ fun VerticalPagerSliderPreview() {
         pageCount = { 6 }
     )
     val scope = rememberCoroutineScope()
-
+    val snacks = DummyCoffeeData.snackList
     VerticalPagerSlider(
+        snacks = DummyCoffeeData.snackList,
         pagerState = pagerState,
-        onItemClick = { index ->
+        onItemClick = {
+                selectedSnack ->
+            // In a real scenario, you'd navigate. Here we just scroll.
+            val page = snacks.indexOf(selectedSnack)
             scope.launch {
-                pagerState.animateScrollToPage(index)
+                pagerState.animateScrollToPage(page)
             }
         }
     )

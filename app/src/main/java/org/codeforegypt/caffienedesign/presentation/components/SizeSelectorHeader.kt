@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.codeforegypt.caffienedesign.R
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 
 @Composable
 fun SizeSelectorHeader(

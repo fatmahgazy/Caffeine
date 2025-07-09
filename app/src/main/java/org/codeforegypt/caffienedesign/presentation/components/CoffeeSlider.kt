@@ -29,8 +29,8 @@ import androidx.compose.ui.unit.fontscaling.MathUtils.lerp
 import androidx.compose.ui.unit.sp
 import org.codeforegypt.caffienedesign.data.DummyCoffeeData
 import org.codeforegypt.caffienedesign.domian.CoffeeDrink
-import org.codeforegypt.caffienedesign.ui.theme.ButtonCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.ButtonCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 import kotlin.math.absoluteValue
 
 @Composable

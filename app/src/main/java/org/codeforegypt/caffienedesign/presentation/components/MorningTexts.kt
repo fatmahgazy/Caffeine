@@ -11,9 +11,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.codeforegypt.caffienedesign.ui.theme.MorningCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.NameCaffeine
-import org.codeforegypt.caffienedesign.ui.theme.Urbanist
+import org.codeforegypt.caffienedesign.presentation.ui.theme.MorningCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.NameCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Urbanist
 
 @Composable
 fun MorningTexts(

@@ -21,7 +21,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.codeforegypt.caffienedesign.R
-import org.codeforegypt.caffienedesign.ui.theme.Sniglet
+import org.codeforegypt.caffienedesign.presentation.ui.theme.Sniglet
 import kotlinx.coroutines.delay
 
 @Composable

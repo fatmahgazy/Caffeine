@@ -1,4 +1,4 @@
-package org.codeforegypt.caffienedesign.ui.theme
+package org.codeforegypt.caffienedesign.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

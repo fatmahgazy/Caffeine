@@ -17,7 +17,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.codeforegypt.caffienedesign.R
-import org.codeforegypt.caffienedesign.ui.theme.GrayCaffeine
+import org.codeforegypt.caffienedesign.presentation.ui.theme.GrayCaffeine
 
 @Composable
 fun Header() {
